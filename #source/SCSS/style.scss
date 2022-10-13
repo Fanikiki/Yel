@@ -1,0 +1,48 @@
+@use 'sass:math';
+@import "nullstyle.scss";
+
+//-----------------------------------------------------------//
+//Миксины//
+@mixin wihe($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin flf($fs, $lh, $fw) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin button($w, $h, $bc, $bs) {
+    width: $w;
+    height: $h;
+    background-color: $bc;
+    box-shadow: $bs;
+}
+
+//Расчеты
+//TO %
+@function prc($pxOne, $pxTwo) {
+    $result: math.div($pxOne, $pxTwo) * 100%;
+    @return $result;
+}
+
+//REM
+@function rem($px) {
+    $result: math.div($px, 16) + rem;
+    @return $result;
+}
+
+//EM
+@function em($px) {
+    $result: math.div($px, 16) + em;
+    @return $result;
+}
+
+//-----------------------------------------------------------//
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
