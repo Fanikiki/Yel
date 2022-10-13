@@ -1,5 +1,10 @@
 @use 'sass:math';
 @import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap');
 
 //-----------------------------------------------------------//
 //Миксины//
@@ -44,7 +49,7 @@
 body {
 
     height: 100%;
-    background-color: rgb(97, 5, 140);
+    background-color: rgb(48, 8, 66);
 
     a {
         color: inherit;
@@ -66,11 +71,21 @@ body {
 }
 
 .title {
+    font-family: 'Actor';
     font-weight: 400;
     line-height: 110%;
     background: linear-gradient(97.31deg, #E395FF 0%, #FFFFFF 50.37%, #9C93FF 99.1%);
     background-clip: text;
     color: transparent;
+}
+
+.subtitle {
+    font-family: 'Actor';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 110%;
+    color: #fff;
+    text-align: left;
 }
 
 //--------Header-----------------------------------------------------
@@ -83,11 +98,21 @@ body {
 
     &__nav {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
+    &__row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
     &__logo {
+        margin: 0 135px 0 0;
+
         img {
             max-width: 140px;
         }
@@ -110,6 +135,7 @@ body {
     }
 
     &__item {
+        font-family: 'Abhaya Libre';
         font-weight: 500;
         font-size: 16px;
         line-height: 110%;
@@ -128,6 +154,7 @@ body {
     align-items: center;
 
     &__button {
+        font-family: 'Acme';
         font-weight: 400;
         font-size: 14px;
         line-height: 110%;
@@ -137,6 +164,10 @@ body {
         padding: 12px 35px;
         margin: 0 20px 0 0;
 
+        &:hover {
+            color: #fff;
+            background-image: linear-gradient(90deg, #9E23FF 0%, #FF8237 100%);
+        }
     }
 
     &__items {
@@ -147,6 +178,7 @@ body {
     }
 
     &__item {
+        font-family: 'Acme';
         font-weight: 400;
         font-size: 14px;
         line-height: 110%;
@@ -182,9 +214,141 @@ body {
     }
 }
 
+//----------Main-----------------------------------------------------
 
 main {
     flex: 1 1 auto;
+}
+
+//-------Pages------------------------------------------------------------
+.page {
+
+    &__yel {}
+}
+
+.page {
+
+    &__project {}
+}
+
+//-------Yel-------------------------------------------------------------
+
+.yel {
+    margin: 190px 0 70px 0;
+
+    &__container {}
+
+    &__title {
+        font-size: 80px;
+        padding: 0 0 30px 0;
+    }
+
+    &__text {
+        font-family: 'Acme';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+//-----------Project--------------------------------------------------------
+
+.project {
+    margin: 0 0 180px 0;
+
+    &__container {}
+
+    &__row {
+        display: block;
+        text-align: right;
+        padding: 60px 110px 50px;
+        background: radial-gradient(rgba(87, 20, 243, 0.3) 0%, rgba(71, 2, 230, 0) 100%);
+    }
+
+    &__details {
+        padding: 0 0 40px 0;
+    }
+
+    &__pool {
+        padding: 0 0 40px 0;
+    }
+
+    &__button {
+        display: inline-block;
+        font-family: 'Actor';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 110%;
+        color: #9B70FF;
+        text-transform: uppercase;
+        background: rgba(204, 182, 255, 0.08);
+        padding: 18px 76px;
+
+        &:hover {
+            color: #fff;
+            background-image: linear-gradient(90deg, #9E23FF 0%, #FF8237 100%);
+        }
+    }
+}
+
+//-----Details----------------------------------------------------------------
+.details {
+
+    &__subtitle {
+        padding: 0 0 40px 0;
+    }
+
+    &__forms {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px 25px;
+
+
+        input {
+            color: rgba(255, 255, 255, 0.4);
+            max-width: 340px;
+            padding: 20px;
+            background: rgba(204, 182, 255, 0.08);
+            border-radius: 10px;
+
+        }
+    }
+}
+
+//------Pool-------------------------------------------------------------
+
+.pool {
+
+    &__subtitle {
+        padding: 0 0 30px 0;
+    }
+
+    &__forms {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-flow: row;
+        gap: 20px 25px;
+
+        input {
+            color: rgba(255, 255, 255, 0.4);
+            max-width: 340px;
+            padding: 20px;
+            background: rgba(204, 182, 255, 0.08);
+            border-radius: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            grid-column: 1 / span 3;
+            grid-row: 3;
+            color: rgba(255, 255, 255, 0.4);
+            padding: 20px;
+            background: rgba(204, 182, 255, 0.08);
+            border-radius: 10px;
+        }
+    }
 }
 
 //--------Footer-----------------------------------------------------
@@ -194,7 +358,9 @@ main {
 
     &__top {}
 
-    &__bottom {}
+    &__bottom {
+        padding: 0 0 36px 0;
+    }
 }
 
 //-------Top Footer------------------------------------------------------------
@@ -205,6 +371,7 @@ main {
     }
 
     &__title {
+        text-align: center;
         font-size: 30px;
         padding: 0 0 27px 0;
     }
@@ -238,7 +405,7 @@ main {
 
 //------Bottom Footer------------------------------------------------------------------
 .bottom-footer {
-    padding: 0 0 36px 0;
+
 
     &__container {
         display: flex;
@@ -246,6 +413,8 @@ main {
         justify-content: space-between;
         align-items: center;
         text-align: center;
+        padding: 100px 0 0 0;
+        border-top: 1px solid rgba(198, 255, 112, 0.5);
     }
 
     &__logo {
@@ -265,6 +434,7 @@ main {
     }
 
     &__item {
+        font-family: 'Abril Fatface';
         font-weight: 400;
         font-size: 16px;
         line-height: 110%;

@@ -19,39 +19,84 @@
                                 <img src="img/header/logo.svg" alt="Logo">
                             </a>
                         </div>
-                        <nav class="header__menu menu">
-                            <ul class="menu__items">
-                                <li class="menu__item">
-                                    <a href="#">Home</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#">How it works</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#">YEL token</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#">Airdrop</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="header__info info">
-                            <div class="info__button">
-                                <a href="#">Spectre</a>
+                        <div class="header__row">
+                            <nav class="header__menu menu">
+                                <ul class="menu__items">
+                                    <li class="menu__item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#">How it works</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#">YEL token</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#">Airdrop</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__info info">
+                                <div class="info__button">
+                                    <a href="#">Spectre</a>
+                                </div>
+                                <ul class="info__items">
+                                    <li class="info__item item-one">
+                                        $4.55
+                                    </li>
+                                    <li class="info__item item-two">
+                                        Ethereum
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="info__items">
-                                <li class="info__item item-one">
-                                    $4.55
-                                </li>
-                                <li class="info__item item-two">
-                                    Ethereum
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </header>
-            <main></main>
+            <main class="page">
+                <section class="page__yel yel">
+                    <div class="yel__container container">
+                        <h1 class="yel__title title">YEL Listing</h1>
+                        <div class="yel__text">
+                            Please fill out the application form below if you are interested in using Popsicle Stand
+                        </div>
+                    </div>
+                </section>
+                <section class="page__project project">
+                    <div class="project__container container">
+                        <div class="project__row">
+                            <div class="project__details details">
+                                <h2 class="details__subtitle subtitle">Details</h2>
+                                <form action="#" class="details__forms">
+                                    <input type="text" placeholder="Project name" tabindex="1">
+                                    <input type="text" placeholder="Project mission" tabindex="2">
+                                    <input type="text" placeholder="Website" tabindex="3">
+                                    <input type="text" placeholder="Telegram to contact" tabindex="4">
+                                    <input type="text" placeholder="Email to contact" tabindex="5">
+                                    <input type="text" placeholder="Token logo URL" tabindex="6">
+                                </form>
+                            </div>
+                            <div class="project__pool pool">
+                                <h2 class="pool__subtitle subtitle">Pool Details</h2>
+                                <form action="#" class="pool__forms">
+                                    <input type="text" placeholder="Farming deposit token amount" tabindex="7">
+                                    <input type="text" placeholder="Token address" tabindex="8">
+                                    <input type="text" placeholder="Tokens per second" tabindex="9">
+                                    <input type="text" placeholder="LP token address" tabindex="10">
+                                    <input type="text" placeholder="Chains" tabindex="11">
+                                    <input type="text" placeholder="Rewards token address if there is" tabindex="12">
+                                    <textarea name="Other information (1000 characters max.) " maxlength="1000"
+                                        placeholder="Other information (1000 characters max.) "
+                                        tabindex="13"></textarea>
+                                </form>
+                            </div>
+                            <div class="project__button">
+                                <a href="#" tabindex="14">submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
             <footer class="footer">
                 <div class="footer__top top-footer">
                     <div class="top-footer__container container">

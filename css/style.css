@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -90,7 +95,7 @@ h6 {
 /*--------------------*/
 body {
   height: 100%;
-  background-color: rgb(97, 5, 140);
+  background-color: rgb(48, 8, 66);
 }
 body a {
   color: inherit;
@@ -111,6 +116,7 @@ body a {
 }
 
 .title {
+  font-family: "Actor";
   font-weight: 400;
   line-height: 110%;
   background: linear-gradient(97.31deg, #E395FF 0%, #FFFFFF 50.37%, #9C93FF 99.1%);
@@ -119,13 +125,31 @@ body a {
   color: transparent;
 }
 
+.subtitle {
+  font-family: "Actor";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 110%;
+  color: #fff;
+  text-align: left;
+}
+
 .header__container {
   margin: 30px 40px 0;
 }
 .header__nav {
   display: flex;
+  align-items: center;
+}
+.header__row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+.header__logo {
+  margin: 0 135px 0 0;
 }
 .header__logo img {
   max-width: 140px;
@@ -142,6 +166,7 @@ body a {
   flex-wrap: wrap;
 }
 .menu__item {
+  font-family: "Abhaya Libre";
   font-weight: 500;
   font-size: 16px;
   line-height: 110%;
@@ -158,6 +183,7 @@ body a {
   align-items: center;
 }
 .info__button {
+  font-family: "Acme";
   font-weight: 400;
   font-size: 14px;
   line-height: 110%;
@@ -167,6 +193,10 @@ body a {
   padding: 12px 35px;
   margin: 0 20px 0 0;
 }
+.info__button:hover {
+  color: #fff;
+  background-image: linear-gradient(90deg, #9E23FF 0%, #FF8237 100%);
+}
 .info__items {
   display: flex;
   text-align: center;
@@ -174,6 +204,7 @@ body a {
   align-items: center;
 }
 .info__item {
+  font-family: "Acme";
   font-weight: 400;
   font-size: 14px;
   line-height: 110%;
@@ -204,13 +235,107 @@ main {
   flex: 1 1 auto;
 }
 
+.yel {
+  margin: 190px 0 70px 0;
+}
+.yel__title {
+  font-size: 80px;
+  padding: 0 0 30px 0;
+}
+.yel__text {
+  font-family: "Acme";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.project {
+  margin: 0 0 180px 0;
+}
+.project__row {
+  display: block;
+  text-align: right;
+  padding: 60px 110px 50px;
+  background: radial-gradient(rgba(87, 20, 243, 0.3) 0%, rgba(71, 2, 230, 0) 100%);
+}
+.project__details {
+  padding: 0 0 40px 0;
+}
+.project__pool {
+  padding: 0 0 40px 0;
+}
+.project__button {
+  display: inline-block;
+  font-family: "Actor";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  color: #9B70FF;
+  text-transform: uppercase;
+  background: rgba(204, 182, 255, 0.08);
+  padding: 18px 76px;
+}
+.project__button:hover {
+  color: #fff;
+  background-image: linear-gradient(90deg, #9E23FF 0%, #FF8237 100%);
+}
+
+.details__subtitle {
+  padding: 0 0 40px 0;
+}
+.details__forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 25px;
+}
+.details__forms input {
+  color: rgba(255, 255, 255, 0.4);
+  max-width: 340px;
+  padding: 20px;
+  background: rgba(204, 182, 255, 0.08);
+  border-radius: 10px;
+}
+
+.pool__subtitle {
+  padding: 0 0 30px 0;
+}
+.pool__forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 20px 25px;
+}
+.pool__forms input {
+  color: rgba(255, 255, 255, 0.4);
+  max-width: 340px;
+  padding: 20px;
+  background: rgba(204, 182, 255, 0.08);
+  border-radius: 10px;
+}
+.pool__forms textarea {
+  width: 100%;
+  height: 150px;
+  grid-column: 1/span 3;
+  grid-row: 3;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  background: rgba(204, 182, 255, 0.08);
+  border-radius: 10px;
+}
+
 .footer {
   background-color: rgb(51, 12, 69);
 }
+.footer__bottom {
+  padding: 0 0 36px 0;
+}
+
 .top-footer__container {
   padding: 120px 0 156px 0;
 }
 .top-footer__title {
+  text-align: center;
   font-size: 30px;
   padding: 0 0 27px 0;
 }
@@ -231,15 +356,14 @@ main {
   margin: 0 20px 0 0;
 }
 
-.bottom-footer {
-  padding: 0 0 36px 0;
-}
 .bottom-footer__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding: 100px 0 0 0;
+  border-top: 1px solid rgba(198, 255, 112, 0.5);
 }
 .bottom-footer__logo img {
   max-width: 113px;
@@ -249,6 +373,7 @@ main {
   flex-wrap: wrap;
 }
 .footer-menu__item {
+  font-family: "Abril Fatface";
   font-weight: 400;
   font-size: 16px;
   line-height: 110%;
